@@ -1,0 +1,141 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Basic Margin Classes */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.m-1 {
+  margin: 1rem;
+}
+
+/* Basic Padding Classes */
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 1rem;
+}
+
+.pl-0 {
+  padding-left: 0.5rem;
+}
+
+/* Basic Width Classes */
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+/* Basic FlexBox Classes */
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-space-center {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Typography Classes */
+.letter-space-0 {
+  letter-spacing: 0.1em;
+}
+
+/* Color Classes */
+.color-violet {
+  color: #6200ef;
+}
+.color-offWhite {
+  color: #70707d;
+}
+
+/* Card Classes */
+.card {
+  box-shadow: 0px 0px 3px black;
+  /* width: 50%; */
+}
+
+.card-rounded-3 {
+  border-radius: 3px;
+}
+
+.card-img {
+  display: block;
+  max-width: 100%;
+}
+
+.img-top-rounded {
+  border-radius: 3px 3px 0 0;
+}
+
+.card-body {
+  /* border: solid; */
+  padding: 0 1rem;
+}
+.card-head {
+  /* border: solid; */
+  font-size: 1.5rem;
+}
+.card-span {
+  font-size: 1rem;
+  font-weight: 200;
+  /* border: solid; */
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1em;
+  word-spacing: 0.4em;
+}
+
+.card-btn {
+  background: none;
+  border: none;
+  font-weight: bolder;
+}
+
+.card-icon {
+  background: none;
+  border: none;
+}
+
+.card-body:hover {
+  background-color: #f5f5f5;
+}
+
+.btn-hover:hover {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
