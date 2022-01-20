@@ -3,6 +3,9 @@ body {
 }
 
 /* Basic Margin Classes */
+.m-auto {
+  margin: auto;
+}
 .mb-0 {
   margin-bottom: 0;
 }
@@ -83,6 +86,12 @@ body {
   color: #70707d;
 }
 
+/* Component classes */
+.flex-container {
+  display: flex;
+  max-width: 900px;
+}
+
 /* Card Classes */
 .card {
   box-shadow: 0px 0px 3px black;
@@ -127,13 +136,13 @@ body {
   background: none;
   border: none;
   font-weight: bolder;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .card-icon {
   background: none;
   border: none;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .card-body:hover {
