@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chips</h1>
+
+    <!-- Simple Chipes -->
+    <h3>Chips with text</h3>
+    <div class="chip-container m-1">
+    <div class="chip">John Doe <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+    <div class="chip">Jane Doe <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+    <div class="chip">Toby Doe <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+    <div class="chip">Holly Doe <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+ </div>
+ <br>
+
+ <!-- Chips with image -->
+ <h3>chips with image</h3>
+
+ <div class="chip-container m-1">
+ <div class="chip">
+     <img src="https://picsum.photos/50/50?random=1" class="chip-img" alt="" srcset="">
+
+     John Doe
+     <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+ </div>
+ <div class="chip">
+    <img src="https://picsum.photos/50/50?random=2" class="chip-img" alt="" srcset="">
+
+    Jane Doe
+    <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+</div>
+<div class="chip">
+    <img src="https://picsum.photos/50/50?random=3" class="chip-img" alt="" srcset="">
+
+    John Doe
+    <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+</div>
+<div class="chip">
+    <img src="https://picsum.photos/50/50?random=4" class="chip-img" alt="" srcset="">
+
+    John Doe
+    <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+</div> <div class="chip">
+    <img src="https://picsum.photos/50/50?random=5" class="chip-img" alt="" srcset="">
+
+    John Doe
+    <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+</div>
+</div>
+
+
+<!-- Small chips -->
+<h3>small chips</h3>
+<div class="chip-container">    
+    <div class="chip chip-small chip-primary">Primary<span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+    <div class="chip chip-small">Jane<span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+    <div class="chip chip-small">Robert<span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+</div>
+
+</body>
+</html>

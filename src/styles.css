@@ -59,7 +59,6 @@ ol {
 
 
 
-
 /* Basic Width Classes */
 .w-100 {
   width: 100%;
@@ -275,17 +274,6 @@ ol {
 /* Snackbar */
 
 .snackbar{
-  /* visibility: hidden;
-  background-color: #333333;
-  color:#F2F2F2;
-  font-size: 1rem;
-  text-align: center;
-  max-inline-size: 450px;
-  block-size: auto;
-  border-radius: 5px;
-  padding: 0.5rem;
-  margin: 1rem; */
-
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   margin-left: -125px; /* Divide value of min-width by 2 */
@@ -312,12 +300,63 @@ ol {
   left: 50%;
   bottom: 30px;
 }
-
-
 .snackbar .btn{
   letter-spacing: 0.1em;
   color: #B176FA;
   background: none;
   border: none;
   font-weight: 400;
+}
+
+.close-btn{
+  padding-left: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* CHIPS */
+
+
+.chip-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  }
+
+
+.chip{
+  padding: 0 25px;
+  margin: 0.1rem;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip-img{
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chip-small{
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+
+}
+.chip-primary{
+  background-color: #6200ef;
+  color: #f1f1f1;
+}
+
+.chip:hover{
+  background-color: rgba(0, 0, 0, 0.288);
+  color: #333;
 }
