@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Badges</h1>
+    <div class="container p-1">
+    <span class="position-relative p-1"> <button class="btn color-white position-relative bg-violet">Action</button> <i class="fa fas fa-exclamation-circle badge-right position-absolute fa-2x"></i></span>
+    <br> <br>
+    <span class="position-relative p-1">text with a badge <i class="fa fas fa-exclamation-circle badge-right position-absolute"></i></span>
+    <br><br>
+    <span class="position-relative p-1"> badge on a icon <i class="fa fa-home position-relative color-violet fa-2x"></i> <i class="fa fas fa-exclamation-circle badge-right position-absolute"></i></span>
+    <br><br>
+    <span class="position-relative p-1">text with a large badge <i class="fa fas fa-exclamation-circle badge-right position-absolute fa-2x"></i></span>
+
+</div>
+
+<div class="container m-1">
+    <h1 align="center">SnackBar</h1>
+    <button class="btn bg-violet color-white " id="baseline-btn">Baseline</button>
+    <button class="btn bg-violet color-white " id="leading-btn">leading</button>
+    <button class="btn bg-violet color-white" id="stacked-btn">Stacked</button>
+
+
+    <div class="snackbar">
+        Can't send photo. Retry in 5 seconds.
+        <button class="btn">READ</button> 
+        <i class="fa fa-close " id="close-btn"></i>
+    </div>
+</div>
+
+<script>
+    const baseBtn = document.querySelector("#baseline-btn")
+    const leadBtn = document.querySelector("#leading-btn")
+    const stackBtn = document.querySelector("#stacked-btn")
+    const closeBtn = document.querySelector("#close-btn")
+    const snackbar = document.querySelector(".snackbar")
+
+
+        baseBtn.addEventListener("click",()=>{
+            snackbar.style.visibility = "visible";
+            snackbar.id="baseline-div";
+        })
+
+        leadBtn.addEventListener("click",()=>{
+            snackbar.style.visibility = "visible";
+            snackbar.id="leading-div";
+        })
+
+        stackBtn.addEventListener("click",()=>{
+            snackbar.style.visibility="visible";
+            snackbar.id="stacked-div";
+            snackbar.textAlign = "left"
+            snackbar.innerHTML = `
+            Can't send photo. Retry in 5 seconds.
+            <br>
+        <button class="btn">READ</button> 
+        <i class="fa fa-close " id="close-btn"></i>
+            `
+        })
+
+        closeBtn.addEventListener("click",()=>{
+            snackbar.style.visibility = "hidden";
+        })
+
+
+</script>
+</body>
+</html>
