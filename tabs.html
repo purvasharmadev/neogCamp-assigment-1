@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabs</h1>
+
+    <div class="container">
+    <div class="my-tabs tabs">
+        <nav class="tabs">
+          <ul>
+            <li class="is-active"><a href="#tab-one">Tab One</a></li>
+            <li><a href="#tab-two">Tab Two</a></li>
+            <li><a href="#tab-three">Tab Three</a></li>
+          </ul>
+        </nav>
+        
+        <section class="tab-content is-active" id="tab-one">Section One</section>
+        <section class="tab-content" id="tab-two">Section Two</section>
+        <section class="tab-content" id="tab-three">Section Three</section>
+        
+      </div>
+    </div>
+
+    <script>
+
+const tabs = document.querySelectorAll(".my-tabs .tabs li");
+const sections = document.querySelectorAll(".my-tabs .tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", e => {
+    e.preventDefault();
+    removeActiveTab();
+    addActiveTab(tab);
+  });
+})
+
+const removeActiveTab = () => {
+  tabs.forEach(tab => {
+    tab.classList.remove("is-active");
+  });
+  sections.forEach(section => {
+    section.classList.remove("is-active");
+  });
+}
+
+const addActiveTab = tab => {
+  tab.classList.add("is-active");
+  const href = tab.querySelector("a").getAttribute("href");
+  const matchingSection = document.querySelector(href);
+  matchingSection.classList.add("is-active");
+}
+
+
+    </script>
+</body>
+</html>

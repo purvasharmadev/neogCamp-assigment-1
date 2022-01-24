@@ -456,3 +456,44 @@ ol {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Tabs */
+
+.tabs{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tabs li{
+  list-style: none;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tabs a{
+  text-decoration: none;
+  color: #6200ef;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px 18px;
+
+}
+.is-active {
+    display: block;
+
+  }
+
+  .tabs .is-active a{
+    text-decoration: none;
+    border-bottom: #333 solid 1px;
+  }
+  
