@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+
     <title>Document</title>
 </head>
 <body>
@@ -39,41 +40,7 @@
     </div>
 </div>
 
-<script>
-    const baseBtn = document.querySelector("#baseline-btn")
-    const leadBtn = document.querySelector("#leading-btn")
-    const stackBtn = document.querySelector("#stacked-btn")
-    const closeBtn = document.querySelector("#close-btn")
-    const snackbar = document.querySelector(".snackbar")
+<script src="src/index.js"></script>
 
-
-        baseBtn.addEventListener("click",()=>{
-            snackbar.style.visibility = "visible";
-            snackbar.id="baseline-div";
-        })
-
-        leadBtn.addEventListener("click",()=>{
-            snackbar.style.visibility = "visible";
-            snackbar.id="leading-div";
-        })
-
-        stackBtn.addEventListener("click",()=>{
-            snackbar.style.visibility="visible";
-            snackbar.id="stacked-div";
-            snackbar.textAlign = "left"
-            snackbar.innerHTML = `
-            Can't send photo. Retry in 5 seconds.
-            <br>
-        <button class="btn">READ</button> 
-        <i class="fa fa-close " id="close-btn"></i>
-            `
-        })
-
-        closeBtn.addEventListener("click",()=>{
-            snackbar.style.visibility = "hidden";
-        })
-
-
-</script>
 </body>
 </html>

@@ -77,6 +77,12 @@ ol {
   list-style: none;
 }
 
+/* Basic Border */
+.border{
+  border: solid;
+}
+
+
 /* basic positioning */
 
 .position-relative{
@@ -359,4 +365,94 @@ ol {
 .chip:hover{
   background-color: rgba(0, 0, 0, 0.288);
   color: #333;
+}
+
+/* Drawer */
+.nav-container{
+  border: solid;
+  background-color: white;
+  width: 50%;
+
+}
+
+.nav-brand{
+  margin-bottom: 0;
+}
+
+.nav-container > ul{
+  list-style: none;
+  padding: 0;
+}
+
+.nav-pill{
+  margin: 0.5rem 0;
+  padding:0.5rem ;
+}
+
+.nav-link{
+  text-decoration: none;
+  padding: 2rem;
+  color: #333;
+}
+
+.nav-hover:hover{
+  background: #f1f1f1;
+  color: #6200ef;
+  border-radius: 3px;
+  /* width: 100%; */
+}
+
+.drawer-ex{
+  border: solid;
+  overflow: scroll;
+  /* padding: 1rem; */
+}
+
+
+/* Dialog */
+
+.dialog {
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1; 
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  /* border: solid; */
+}
+
+.dialog-btn{
+  color: #6200ef;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.dialog-body{
+  border: solid;
+  padding: 1rem;
+}
+
+.dialog-text{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#alert-dialog-div{
+  /* border: solid; */
+  background-color: white;
+  width: 50%;
+  margin: auto;
+}
+
+.alert-close-btn, .simple-close-btn{
+  padding-left: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
 }
